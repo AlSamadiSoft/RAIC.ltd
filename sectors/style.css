@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;700;800;900&display=swap");
+/* CSS Codes */
+*{
+	margin: 0 auto;
+    text-align: center;
+    font-family: 'Cairo', sans-serif ;
+    position: relative;
+    transition: all 0.3s ease-in-out;  
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Scroll Style */
+::-webkit-scrollbar{
+  width: 0px;
+  background-color: #060116;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+/* First Page Style */
+.firstPage{
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+}
+
+
+/* Header Style */
+.headerLinear{
+  width: 100%;
+  background-color: #006837;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;}
+
+/* Menu Codes */
+a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+  width: max-content;
+  background-color: transparent;
+  margin: 0px 5px;
+  border-radius: 10px;
+  border: #fff solid 1px;
+  color: #fff;
+}
+
+.nav_links li:hover{
+  background-color: #fff;
+  color: #006837;
+}
+
+.nav_links li:hover a{
+  color: #006837;
+}
+
+#turnON{
+  background-color: #fff;
+  color: #006837;
+}
+
+.threeLinesLinear{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 1329px){
+  .threeLinesLinear{
+    display: flex;
+    cursor: pointer;
+  }
+
+  .threeLinesLinear .navLine{
+    width: 25px;
+    height: 2.5px;
+    background-color: #006837;
+    margin: 2.5px 0;
+    border-radius: 50px;
+  }
+  .nav_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    width: 100px;
+    background-color: #006837;
+    height: 0;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .nav_links.active{
+    height: 50vh;
+  }
+
+  .nav_links.active a{
+    color: #006837;
+  }
+
+  .nav_links ul{
+    display: block;
+    width: fit-content;
+    text-align: center;
+  }
+  .nav_links li{
+    margin: 5px 10px;
+    width: 200px;
+    max-width: 50%;
+  }
+
+  .nav_links li:hover{
+    margin: 5px 0px 5px 20px;
+    color: #006837;
+  }
+}
+
+/* NativeBar End Codes */
+
+.headerTextLinear{
+  width: fit-content;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerLinear #domineName{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin: 0px 15px;
+}
+
+.domineMeaning {
+  height: fit-content;
+  padding: 0px;
+  margin: 0px;
+  width: -webkit-fill-available;
+}
+
+.domineMeaning h1{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0px 0px -5px 0px;
+  width: max-content;
+}
+
+.domineMeaning h2{
+  color: #fff;
+  font-size: 10px;
+  text-align: left;
+  margin: -10px 0px 0px 0px;
+  width: max-content;
+}
+
+
+.backgroundImg{
+  background-image:url("https://raic-ltd.netlify.app/sectors/imgs/Background.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+}
+
+.backgroundLinear{
+  background-color: #000000d7;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row-reverse;
+}
+
+.backgroundImg img{
+  height: 60px;
+  width: 60px;
+  right: 10px;
+}
+
+.backgroundLinear .linear{
+  content: '';
+  width: 10px;
+  right: 10px;
+  height: 5vh;
+  background-color: #006837;
+  border-radius: 20px;
+}
+
+.backgroundLinear p{
+  right: 10px;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 700;
+  width: 70%;
+  text-align: right;
+}
+
+/* Info Linear Design */
+.bottomLinear{
+  background-color: #006837;
+  width: 100%;
+  height: fit-content;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+
+
+.infolinear{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 400px;
+  max-width: 80%;
+  padding: 5px;
+  flex-direction: row-reverse;
+}
+
+.infolinear .fa-solid{
+  background-color: #fff;
+  color: #006837;
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infolinear p{
+  color: #fff;
+  width: 375px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+
+/* CopyRight Linear */
+.btmLinear{
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.btmLinear #copyRight{
+  color: #fff;
+  width: 90%;
+  text-align: center;
+}
+
+.btmLinear #Cooding{
+  background-color: #fff;
+  padding: 0px 25px;
+  border-radius: 25px;
+  margin: 5px;
+  border: #fff solid 1px;
+}
+
+.btmLinear #Cooding:hover{
+  padding: 0px 35px;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: #fff 0px 0px 50px;
+}
+
+.btmLinear a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* The Main Codes For Page */
+
+.cardLinear{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.cardBackground{
+  background-position: right;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.mainCardDesign{
+  background-color: #c69c6d95;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 100%;
+  padding-top: 0px;
+}
+
+.mainCardDesign p{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: #0000009a;
+  border-radius: 15px;
+  padding: 0px 20px;
+}
+
+.mainCardDesign h1{
+  color: #fff;
+  font-size: 20px;
+  border-radius: 15px;
+  font-weight: 800;
+  padding: 0px 20px;
+  text-shadow: rgba(0, 0, 0, 0.501) 0px 0px 15px;
+}
+
+.mainCardDesign:hover{
+  opacity: 0%;
+  padding-top: 300px;
+}
+
+/*
+.mainCardDesign:hover{
+  background-color: #c69c6d00;
+}
+
+.mainCardDesign:hover p{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items:flex-start;
+  font-size: 20px;
+  right: 15px;
+  top: 5px;
+}
+*/
