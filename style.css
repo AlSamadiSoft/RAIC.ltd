@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;700;900&display=swap");
 /* CSS Codes */
 *{
 	margin: 0 auto;
     text-align: center;
     font-family: 'Cairo', sans-serif ;
     position: relative;
-    transition: all 0.3s ease-in-out;  
+   
 }
 
 body{
@@ -14,438 +14,59 @@ body{
   justify-content: center;
   flex-direction: column;
   width: 100%;
-}
-
-/* Scroll Style */
-::-webkit-scrollbar{
-  width: 0px;
-  background-color: #060116;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  border-radius: 15px;
-}
-
-
-/* First Page Style */
-.firstPage{
-  width: 100%;
   height: 100vh;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-
 }
 
-/* Header Style */
-.headerLinear{
-  width: 100%;
+/* Main Linear Design */
+.mainLinear{
   background-color: #006837;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;}
-
-/* Menu Codes */
-a{
-  font-size: 14px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav_links{
-  list-style: none;
-}
-
-.nav_links li{
-  display: inline-block;
-  padding: 0px 20px;
-  width: max-content;
-  background-color: transparent;
-  margin: 0px 5px;
-  border-radius: 10px;
-  border: #fff solid 1px;
-  color: #fff;
-}
-
-.nav_links li:hover{
-  background-color: #fff;
-  color: #006837;
-}
-
-.nav_links li:hover a{
-  color: #006837;
-}
-
-#turnON{
-  background-color: #fff;
-  color: #006837;
-}
-
-.threeLinesLinear{
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: #fff;
-}
-
-@media only screen and (max-width: 1329px){
-  .threeLinesLinear{
-    display: flex;
-    cursor: pointer;
-  }
-
-  .threeLinesLinear .navLine{
-    width: 25px;
-    height: 2.5px;
-    background-color: #006837;
-    margin: 2.5px 0;
-    border-radius: 50px;
-  }
-  .nav_links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    top: 10vh;
-    width: 100px;
-    background-color: #006837;
-    height: 0;
-    width: 100%;
-    z-index: 10;
-    overflow: hidden;
-  }
-
-  .nav_links.active{
-    height: 50vh;
-  }
-
-  .nav_links.active a{
-    color: #006837;
-  }
-
-  .nav_links ul{
-    display: block;
-    width: fit-content;
-    text-align: center;
-  }
-  .nav_links li{
-    margin: 5px 10px;
-    width: 200px;
-    max-width: 50%;
-  }
-
-  .nav_links li:hover{
-    margin: 5px 0px 5px 20px;
-    color: #006837;
-  }
-}
-
-/* NativeBar End Codes */
-
-.headerTextLinear{
-  width: fit-content;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-}
-
-.headerLinear #domineName{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 900;
-  letter-spacing: 5px;
-  margin: 0px 15px;
-}
-
-.domineMeaning {
   height: fit-content;
-  padding: 0px;
-  margin: 0px;
-  width: -webkit-fill-available;
-}
-
-.domineMeaning h1{
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: left;
-  margin: 0px 0px -5px 0px;
-  width: max-content;
-}
-
-.domineMeaning h2{
-  color: #fff;
-  font-size: 10px;
-  text-align: left;
-  margin: -10px 0px 0px 0px;
-  width: max-content;
-}
-
-/* Logo linear Style */
-.logoLinear{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 90vh;
-  width: 100%;
-}
-
-.logoLinear img{
-  background-color: #ffffffa9;
-  padding: 25px;
-  border-radius: 20px;
-  width: 100px;
-  height: auto;
-  margin: 10px 5px 5px 5px;
-}
-
-.logoLinear img:hover{
-  margin: 0px 5px 15px 5px;
-}
-
-.logoLinear h1{
-  background-color: #c69c6d;
-  padding: 0px 10px;
-  border-radius: 20px;
-  margin: 1.5px 1px;
-  width: 300px;
-  font-size: 15px;
-  color: #fff;
-}
-
-.logoLinear h1:hover{
-  margin: 1.5px 0px 1.5px 25px;
-}
-
-.logoLinear h2{
-  background-color: #000;
-  padding: 0px 15px;
-  border-radius: 10px;
-  margin: 50px 5px 5px 5px;
-  font-size: 22.5px;
-  color: #fff;
-  line-height: 1.5;
-}
-
-
-/* first Page Buttons */
-.firstPageButtons{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  max-width: 90%;
-}
-
-.firstPageButtons button{
-  margin: 2.5px;
-  background-color: #000;
-  border: #000 1px solid;
-  color: #fff;
-  border-radius: 5px;
-  padding: 0px 7px;
-  font-size: 10px;
-  font-weight: 700;
-}
-
-.firstPageButtons button:hover{
-  background-color: #006837;
-  border: #006837 1px solid;
-  padding: 0px 15px;
-}
-
-
-#myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100vh;
-}
-
-
-/* Secound Page */
-.titleLinear{
-  width: 90%;
-  display: flex;
-}
-
-.titleLinear #title{
-  text-align: right;
-  padding: 0px 25px;
-  background-color: #000;
-  color: #fff;
-  width: fit-content;
-  font-size: 25px;
-  border-radius: 25px;
-  border: #fff 5px solid;
-}
-
-.titleLinear::before{
-  content: '';
-  width: 100%;
-  height: 1px;
-  background: #000;
-  position: absolute;
-  top: 25px;
-  z-index: 0;
-}
-
-.secoundPage{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  position: relative;
-  height: fit-content;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  overflow: hidden;
-  padding: 10px 0px 20px 0px;
-  margin: 0;
-}
-
-/* Cards Design */
-.cardDepartment{
-  width: 100%;
-  height: fit-content;
-  padding: 10px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.cardDepartment #card{
-  border: #c69c6d 1px solid;
-  width: 350px;
-  height: 45vh;
-  margin: 5px 15px;
+  width: 600px;
+  max-width: 80%;
   border-radius: 25px;
   padding: 5px;
+  margin: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
-.cardDepartment #card:hover{
+.logo{
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.mainLinear:hover {
+  margin: 0px 5px 10px 5px;
   background-color: #c69c6d;
+  box-shadow: #000 5px 5px;
 }
 
-.fa-solid{
-  padding: 30px 10px 10px 10px;
-  font-size: 100px;
-  color: #c69c6d;
-}
-
-.cardDepartment #card:hover .fa-solid{
+/* Titel Text Design */
+#title{
   color: #fff;
-  font-size: 125px;
-}
-
-.cardDepartment #subtitle{
-  color: #c69c6d;
-  font-size: 20px;
-  font-weight: 800;
-}
-
-.cardDepartment #card:hover #subtitle{
-  color: #fff;
-}
-
-
-.cardDepartment #text{
-  color: #c69c6d;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.cardDepartment #card:hover #text{
-  color: #fff;
-}
-
-/* Third Page Codes */
-.thirdPage{
-  width: 100%;
-  height: fit-content;
-  background-color: #c69c6d;
-  padding: 10px 0px 25px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.thirdPage .titleLinear{
-  width: 90%;
-  display: flex;
-  padding: 10px 0px;
-}
-
-.thirdPage .titleLinear #title{
-  text-align: right;
-  padding: 0px 25px;
-  background-color: #fff;
-  color: #c69c6d;
-  width: fit-content;
+  font-weight: 900;
   font-size: 25px;
-  border-radius: 25px;
-  border: #c69c6d 5px solid;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
 }
 
-.thirdPage .titleLinear::before{
-  content: '';
-  width: 100%;
-  height: 1px;
-  background: #fff;
-  position: absolute;
-  top: 35px;
-  z-index: 0;
+
+.mainLinear:hover #title{
+  color: #000;
 }
 
-.textFlix{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  height: fit-content;
-  align-content: flex-start;
+/* Text Linear */
+.textLinear{
+  padding-bottom: 10px;
 }
 
-.thirdPage p{
-  width: 500px;
-  max-width: 90%;
-  color: #fff;
-  margin: 10px 15px;
-  border: #fff 2px solid;
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 15px;
-  font-weight: 700;
-  text-align: center;
+.textLinear h1{
+  font-size: 10px;
+  color: rgb(201, 201, 201);
+  transition: all 0.5s ease-in-out;
 }
 
-.thirdPage p:hover{
-  background-color: #fff;
-  color: #c69c6d;
-}
 
-.thirdPage #bold{
-  font-weight: 800;
-  font-size: 16px;
-  color: rgb(235, 235, 235);
-}
-
-.thirdPage p:hover #bold{
-  color: rgb(116, 116, 116);
+.mainLinear:hover .textLinear h1{
+  color: #000;
 }
